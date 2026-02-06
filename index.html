@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy Birthday ✨</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <div class="bg-blobs" aria-hidden="true"></div>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="tag">🎂 Special Day • Memory Cards</p>
+      <h1>
+  Happy Birthday,
+  <span id="personName">Sister</span> ✨
+</h1>
+      <p class="sub">
+      Feb 7 တွင်ကျရောက်သော မွေးနေ့မှစ၍ နောက်နှစ်ပေါင်းများစွာအထိ ကျန်းမာပျော်ရွှင်ပါစေ
+      </p>
+
+      <div class="hero-actions">
+        <button class="btn" id="scrollBtn">View Memories ↓</button>
+        <button class="btn ghost" id="surpriseBtn">Surprise 🎉</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" id="memories">
+    <section class="section-head">
+      <h2>📸 Memory Cards</h2>
+      <p class="hint">Thanks ✨</p>
+    </section>
+
+    <section class="grid" id="cardsGrid">
+      <!-- Cards injected by JS -->
+    </section>
+
+    <footer class="footer">
+      <p>Made with 🤍 for your birthday</p>
+    </footer>
+  </main>
+
+  <!-- Surprise Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-card">
+      <button class="x" id="closeModal">✕</button>
+      <h3>🎉 Wish for You</h3>
+ <p id="modalText">
+   May your day be fiilled with smiles, peace, and love 🎉🎂
+ </p>
+      <button class="btn" id="confettiBtn">Pop Confetti 🎊</button>
+      <canvas id="confettiCanvas"></canvas>
+    </div>
+  </div>
+<!-- Background Music -->
+<audio id="bgMusic" src="./music/birthday.mp3" loop></audio>
+
+<button id="musicBtn" class="music-btn">
+  ▶ Play Music
+</button>
+  <script src="script.js"></script>
+</body>
+</html>
